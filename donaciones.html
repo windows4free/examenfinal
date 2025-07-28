@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Donaciones - By Mei</title>
+    <meta name="description" content="Dona materiales o productos para ayudar a más personas con By Mei.">
+    <link rel="stylesheet" href="css/estilo.css" />
+    <link rel="stylesheet" href="css/grid.css" />
+    <link rel="stylesheet" href="css/forms.css" />
+</head>
+<body>
+    <header>
+        <section class="brand-section">
+            <img class="brand" src="https://picsum.photos/id/12/64/64" alt="Logo By Mei" />
+            <h1>By Mei</h1>
+        </section>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="acercade.html">Acerca de</a></li>
+                <li><a href="programas.html">Nuestros Programas</a></li>
+                <li><a href="como-ayudar.html">Cómo Ayudar</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="entregas.html">Entregas</a></li>
+                <li><a href="contacto.html">Contáctenos</a></li>
+                <li><a href="donaciones.html">Donaciones</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="container">
+            <h2>Haz una Donación</h2>
+            <p>¡Ayúdanos a llevar alegría a más personas! Puedes donar materiales o productos para crear más arreglos solidarios.</p>
+            <form id="donacionForm" class="grid-container" novalidate>
+                <div class="row m-2">
+                    <div class="col-sm-12 col-md-6">
+                        <label for="nombre">Nombre Completo</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required />
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <label for="correo">Correo Electrónico</label>
+                        <input type="email" id="correo" name="correo" placeholder="tucorreo@email.com" required />
+                    </div>
+                </div>
+                <div class="row m-2">
+                    <div class="col-sm-12 col-md-6">
+                        <label for="tipo">¿Qué deseas donar?</label>
+                        <select id="tipo" name="tipo" required>
+                            <option value="">Selecciona una opción</option>
+                            <option value="materiales">Materiales (limpiapipas, papel, listones, etc.)</option>
+                            <option value="productos">Productos terminados</option>
+                            <option value="dinero">Aporte económico</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <label for="mensaje">Mensaje (opcional)</label>
+                        <input type="text" id="mensaje" name="mensaje" placeholder="¿Algo que quieras agregar?" />
+                    </div>
+                </div>
+                <div class="row m-2">
+                    <div class="col-sm-12 center-content">
+                        <button type="submit" class="btn-confirmar">Enviar Donación</button>
+                    </div>
+                </div>
+            </form>
+            <div id="form-mensaje" style="margin-top:1rem;"></div>
+        </section>
+    </main>
+    <footer>
+        <section>
+            &copy; 2025 By Mei | WhatsApp: <a href="https://wa.me/50496425587" target="_blank">+504 9642-5587</a> | 
+            Instagram: <a href="https://www.instagram.com/bymei.hn?igsh=MWc3emd2eGpoYXlqdg==" target="_blank">@bymei.hn</a>
+        </section>
+    </footer>
+    <script src="js/formValidation.js"></script>
+</body>
+</html>
