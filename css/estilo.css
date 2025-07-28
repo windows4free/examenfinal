@@ -95,3 +95,85 @@ header nav ul li a:focus {
 .hero-action.center strong {
     color: #E568C3;
 }
+
+.btn-confirmar {
+    background: #FB627E;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    padding: 1rem 2.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0.5rem;
+    box-shadow: 0 2px 8px #e568c355;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+}
+.btn-confirmar:hover,
+.btn-confirmar:focus {
+    background: #E568C3;
+    color: #fff;
+}
+
+.container {
+    max-width: 1024px;
+    margin: 2rem auto;
+    background: #FCEEA6;
+    border-radius: 16px;
+    box-shadow: 0 2px 12px #fb627e22;
+    padding: 2rem 1rem;
+}
+.container h2 {
+    color: #FB627E;
+    margin-top: 0;
+}
+.container ul {
+    font-size: 1.1rem;
+    padding-left: 1.2rem;
+}
+.container img {
+    border-radius: 12px;
+    margin-top: 1rem;
+    width: 100%;
+    max-width: 320px;
+    box-shadow: 0 2px 8px #e568c355;
+}
+
+.center-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+footer {
+    background: #FB627E;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0.5rem;
+    font-size: 1rem;
+    margin-top: 2rem;
+}
+footer a {
+    color: #FCEEA6;
+    text-decoration: underline;
+    font-weight: bold;
+}
+footer a:hover {
+    color: #E568C3;
+}
+
+@media (max-width: 720px) {
+    .container {
+        padding: 1rem 0.5rem;
+    }
+    .hero-action.center {
+        padding: 1rem 0.5rem;
+        font-size: 1rem;
+    }
+    header nav ul {
+        flex-direction: column;
+        gap: 0.2rem;
+    }
+}
