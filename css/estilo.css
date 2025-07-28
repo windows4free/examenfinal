@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", Arial, sans-serif;
+    background-color: #FFF9F9;
+    color: #222;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FB627E;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    box-shadow: 0 2px 8px #e568c355;
+}
+header .brand-section {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+header .brand-section img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 3px solid #FCEEA6;
+    background: #FFF9F9;
+}
+header .brand-section h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    color: #fff;
+}
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 0.5rem;
+    margin: 0;
+    padding: 0;
+}
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    background: transparent;
+    transition: background 0.3s;
+    font-weight: bold;
+}
+header nav ul li a:hover,
+header nav ul li a:focus {
+    background: #E568C3;
+    color: #fff;
+}
+
+.hero-panel {
+    position: relative;
+    width: 100%;
+    min-height: 350px;
+    max-height: 70vh;
+    overflow: hidden;
+    background: #FCEEA6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero-panel picture,
+.hero-panel img {
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+    display: block;
+}
+.hero-action.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    max-width: 500px;
+    background: rgba(255, 249, 249, 0.92);
+    border-radius: 16px;
+    padding: 2rem 1.5rem;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #FB627E;
+    box-shadow: 0 4px 24px #fb627e33;
+    font-size: 1.2rem;
+}
+.hero-action.center strong {
+    color: #E568C3;
+}
