@@ -18,6 +18,7 @@
 }
 
 .grid-container .row.vcenter {
+    display: flex;
     align-items: center;
 }
 

@@ -60,3 +60,15 @@ input.error {
     outline: red;
     border: solid 1px red;
 }
+
+textarea {
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.5rem 0.75rem;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    resize: vertical;
+    min-height: 120px;
+    box-sizing: border-box;
+    margin-bottom: 1.5rem;
+}
